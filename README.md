@@ -6,50 +6,89 @@
 
 # Web Application Security Analysis
 
-Welcome to the **Web Application** repository! This project is dedicated to analyzing and demonstrating common vulnerabilities in web applications, with a primary focus on the [OWASP Top 10](https://owasp.org/www-project-top-ten/).
+Welcome to the **Web Application Security Analysis** repository! This project is dedicated to the research, simulation, and documentation of security vulnerabilities found in modern web applications, with a primary focus on the [OWASP Top 10](https://owasp.org/www-project-top-ten/) and other real-world threats.
+
+---
 
 ## ✨ Overview
-This repository is built to help learners, developers, and security enthusiasts understand how critical security flaws work and how to prevent them in real-world applications. 
+This repository aims to provide a structured, hands-on learning environment for:
+- Security researchers and enthusiasts
+- Web developers seeking secure coding practices
+- SOC Analysts, Pentesters, and Red Teamers
 
-The analysis includes code samples, write-ups, and hands-on labs related to the following:
-- Injection Attacks (SQL, Command, etc.)
-- Broken Authentication
-- Sensitive Data Exposure
-- XML External Entities (XXE)
-- Broken Access Control
-- Security Misconfiguration
-- Cross-Site Scripting (XSS)
-- Insecure Deserialization
-- Using Components with Known Vulnerabilities
-- Insufficient Logging & Monitoring
+Each topic includes practical examples, walkthroughs, and mitigation techniques to foster a deeper understanding of web security.
 
-## 🔗 Quick Links
-- [Injection Attacks](docs/injection.md)
-- [Broken Authentication](docs/broken-authentication.md)
-- [Sensitive Data Exposure](docs/sensitive-data-exposure.md)
-- [Cross-Site Scripting (XSS)](docs/xss.md)
-- [Broken Access Control](docs/broken-access-control.md)
-- [All Topics](docs/README.md)
+---
 
-## ⚙️ Technologies Used
-- Python / Flask
-- Docker
-- MySQL
-- OWASP Juice Shop (optional references)
-- Burp Suite for testing
+## 🔧 Vulnerability Categories
 
-## 🎓 Who Is This For?
-- Cybersecurity Students
-- Web Developers
-- SOC Analysts / Pentesters
-- Anyone interested in secure coding practices
+### OWASP Top 10 (2021)
+- [A01 - Broken Access Control](docs/owasp/A01-broken-access-control.md)
+- [A02 - Cryptographic Failures](docs/owasp/A02-cryptographic-failures.md)
+- [A03 - Injection](docs/owasp/A03-injection.md)
+- [A04 - Insecure Design](docs/owasp/A04-insecure-design.md)
+- [A05 - Security Misconfiguration](docs/owasp/A05-security-misconfiguration.md)
+- [A06 - Vulnerable and Outdated Components](docs/owasp/A06-vulnerable-components.md)
+- [A07 - Identification and Authentication Failures](docs/owasp/A07-authentication-failures.md)
+- [A08 - Software and Data Integrity Failures](docs/owasp/A08-software-integrity-failures.md)
+- [A09 - Security Logging and Monitoring Failures](docs/owasp/A09-logging-monitoring-failures.md)
+- [A10 - Server-Side Request Forgery (SSRF)](docs/owasp/A10-ssrf.md)
+
+### Additional Vulnerabilities
+- [Cross-Site Request Forgery (CSRF)](docs/others/csrf.md)
+- [Clickjacking](docs/others/clickjacking.md)
+- [Business Logic Flaws](docs/others/business-logic.md)
+- [Open Redirects](docs/others/open-redirect.md)
+- [CORS Misconfiguration](docs/others/cors.md)
+
+---
+
+## ⚙️ Tech Stack
+- **Languages:** Python, JavaScript, HTML
+- **Frameworks:** Flask, Express
+- **Testing Tools:** Burp Suite, OWASP ZAP, Postman
+- **Environments:** Docker, Linux
+- **Reference Apps:** OWASP Juice Shop, DVWA, WebGoat
+
+---
+
+## 🌐 Getting Started
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/huynhtrungcip/web-application.git
+   ```
+2. Navigate to the project directory:
+   ```bash
+   cd web-application
+   ```
+3. Follow individual documentation in the `docs/` folder for setup and demonstration of each vulnerability.
+
+---
+
+## 🔍 Resources
+- [OWASP Official Website](https://owasp.org)
+- [PortSwigger Web Security Academy](https://portswigger.net/web-security)
+- [Hack The Box / TryHackMe Labs](https://tryhackme.com)
+
+---
 
 ## ✍️ Contributing
-Contributions are welcome! Feel free to fork this repository and submit a pull request. Check out the [contributing guidelines](CONTRIBUTING.md) for more info.
+We welcome all contributions! To contribute:
+1. Fork the repo
+2. Create a new branch (`git checkout -b feature/your-feature`)
+3. Commit your changes
+4. Open a Pull Request
+
+Please review the [contributing guidelines](CONTRIBUTING.md) before submitting.
+
+---
 
 ## 📄 License
 This project is licensed under the [MIT License](LICENSE).
 
 ---
 
-> ⚡ "Security is not a product, but a process." – Bruce Schneier
+> ⚡ "Security is not a destination, it's a journey."
+> 
+> Empowering secure development through awareness and practice.
+
